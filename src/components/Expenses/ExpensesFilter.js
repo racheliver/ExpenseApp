@@ -3,7 +3,7 @@ import './ExpensesFilter.css';
 
 const ExpensesFilter = (props) => {
     const changeYearFilterHandler = (event) => {
-        props.setYearFilter(event.target.value);
+        props.onSetYearFilter(event.target.value);
     };
     return  (
         <div className='expenses-filter'>
