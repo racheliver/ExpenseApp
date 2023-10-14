@@ -40,7 +40,7 @@ const ExpenseForm = (props) => {
     setEnteredAmount("");
     setEnteredDate("");
     setEnteredTitle("");
-    console.log(expenseData);
+    props.onCancel()
   };
   return(
   <form onSubmit={submitHandler}>
